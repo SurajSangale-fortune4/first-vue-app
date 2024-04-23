@@ -3,15 +3,15 @@
     <h1>{{ title }}</h1>
     <p>{{ disc }}</p>
 </div>
-<button v-on:click="onClickButton('clicked')">Save</button>
+<!-- <button v-on:click="onClickButton('clicked')">Save</button>
 <button v-on:dblclick="onClickButton('double click noticed')">Doubled</button>
-<!-- <div>
+<div>
     <h1>Log in:</h1>
     <h3>enail</h3>
     <input type="email" placeholder="enter your email" v-model="email" />
     <h3>password</h3>
     <input type="password" placeholder="enter your password" v-model="password" />
-</div> -->
+</div>
 <div>
     <button v-on:click="onClickLogIn()">
         login
@@ -40,6 +40,13 @@
             login
         </button>
     </div>
+</div>-->
+<div>
+    <h1>Weathers</h1>
+    <ol>
+        <li v-for="item in weathers" :key="item">{{item.name}} is starts from {{item.startMonth}}</li>
+    </ol>
+
 </div>
 </template>
 
@@ -56,6 +63,16 @@ export default {
             email: null,
             password: null,
             eduction: [],
+            weathers: [{
+                name: 'Winter',
+                startMonth: 'Nov'
+            }, {
+                name: 'Spring',
+                startMonth: 'jan'
+            }, {
+                name: 'Summer',
+                startMonth: 'April'
+            }]
         };
     },
     methods: {
