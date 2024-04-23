@@ -22,15 +22,15 @@
     <h3>Highest education</h3>
     <div class='edu-fields'>
         <div class='edu-fields-row'>
-            <input type="checkbox" value="hsc" id="hsc" v-model="eduction" />
+            <input type="radio" value="hsc" id="hsc" v-model="eduction" />
             <label for="hsc"> HSC</label>
         </div>
         <div class='edu-fields-row'>
-            <input type="checkbox" value="bachelors" id="bachelors" v-model="eduction" />
+            <input type="radio" value="bachelors" id="bachelors" v-model="eduction" />
             <label for="bachelors"> Bachelors</label>
         </div>
         <div class='edu-fields-row'>
-            <input type="checkbox" value="masters" id="masters" v-model="eduction" />
+            <input type="radio" value="masters" id="masters" v-model="eduction" />
             <label for="masters"> Masters</label>
         </div>
     </div>
